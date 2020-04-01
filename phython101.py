@@ -64,3 +64,68 @@ def mojafunkcja():
      wiek = 33;
      print("Imie :" + imie.upper() + " Wiek" + str(wiek) + ".Thank You ");
 mojafunkcja();
+print("""
+######################
+##Dodawanie parametru#
+######################
+Parametr def nazwafunkcji(parametr): wprowadza do f argumnet 100
+### wywolanie f nazwafunkcji(argument)
+""");
+def fparametr(num):#parametr num w prowadza do f argument
+	name = "wynik"
+	print(name);
+	print(num + 100);
+fparametr(100);#argument 100 wynik f to 200
+print("####przekazanie  dwoch argumentow do parametrow x i y #####");
+def dwaparametry(x,y):
+	print(x + y);
+dwaparametry(.3, .2);
+dwaparametry(222, 333);
+print("\n");
+print("""### Uzycie RETURN        #####
+         ### def freturn(x,y):      ###
+         ###	return x * y;   ###
+         ### print(freturn(44,22)); ###
+         ##############################
+""");
+def freturn(x,y):
+	return x * y;
+print(freturn(44,22));
+print("\n");
+print("###########Potega .5 to liczba 0,5##############");
+def sroot(x):
+	return x ** .5;
+print(sroot(64));
+print("\n");
+print("""###########Boolean true and false##############
+### namex = "type sprawdza typ  zmiennej "; 
+### bool1 = True; Uwaga True musi byc z DUZZEJ litery
+### bool2 = 3 + 3 == 6;
+### bool3 = False;
+### bool4 = 3 +3 != 6
+### print(bool1, bool2, bool3, bool4);
+""");
+namex = "type sprawdza typ  zmiennej ";
+bool1 = True;
+bool2 = 3 + 3 == 6;
+bool3 = False;
+bool4 = 3 +3 != 6
+print(bool1, bool2, bool3, bool4);
+print(type(bool1));
+print(type(namex));
+print("Wywolanie type -> print(type(zmiena))");
+print("\n");
+print("""########Bool operators#################""");
+print("\n");
+print("""
+### x = 7 > 6;
+### x1 = 6 <9;
+### x2 = 7 >= 7;
+### x3 = 7 <= 7;
+### print(x, x1, x2, x3);
+""");
+x = 7 > 6;
+x1 = 6 <9;
+x2 = 7 >= 7;
+x3 = 7 <= 7;
+print(x, x1, x2, x3);
