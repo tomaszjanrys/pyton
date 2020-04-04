@@ -129,3 +129,67 @@ x1 = 6 <9;
 x2 = 7 >= 7;
 x3 = 7 <= 7;
 print(x, x1, x2, x3);
+print("""########Bool operators## and ## or ## not ###########
+--- z = (3 > 2) and (4 >3) => AND dwa warunki spelnione to  TRUE 
+--- zz = ( 3 >1) or (3<2) => Jeden warunek spelnony to TRUE
+--- zzz = not True 
+--- print("And :" ,z,"OR :" ,zz,"NOT", zzz)
+
+""");
+z = (3 > 2) and (4 >3)
+zz = ( 3 >1) or (3<2)
+zzz = not True
+print("And :" ,z,"OR :" ,zz,"NOT", zzz)
+print("\n")
+print("####### WARUNEK   I F   E L S E  ############")
+print("""--------------
+def age(liczba):  => funkcja z parametem liczba
+          if (liczba > 18):  => warunek jesli jest spelniony wykona sie return 
+               return "Masz 18 +" => instrukcja do wykonannia po spelnieniu warunku 
+          else: => jezeli warunek jest nie spelnony wykona sie return 
+               return "Nie masz 18" => jakas instrukcja do wykonania 
+print(age(1)) => wywolanie funkcji z przekazaniem argumentu 
+print(age(222)) => wywolanie funkcji z przekazaniem argumentu 
+ """)
+
+def age(liczba):
+          if (liczba > 18):
+               return "Masz 18 +"
+          else:
+               return "Nie masz 18"
+print(age(1))
+print(age(222))
+print("\n")
+print("----WARUNEK   I F     E L I F    E L S E -------")
+print("""-----------------------------------------------
+--- def alkochol(wiek, kasa):  => funkcja z parametrami 
+---     if (wiek >= 21) and (kasa >= 5):   => warunek gdy TRUE wykona sie return  
+---          return "Ok. Zapraszamy "   =>
+---     elif (wiek >= 21) and (kasa < 5):    => Gdy if FALSE wykona sie ELIF gdy FALSE przechodzi do nastepnego elif 
+---          return "SORRY. Najtanszy drink kosztuje 5zl"   =>
+---     elif (wiek < 21) and (kasa > 5):    => Gdy TRUE wykona sie Return gdy FALSE wykona ELSE
+---          return "Masz kase ale nie masz 21 lat :("    =>
+---     else:  
+---          return " F U C K WYPAD Z BARU."    =>
+--- print(alkochol(22,22))  => Wywolanie FUNKCJI z przekazaniem ARGUMENTOW
+--- print(alkochol(22,1))   => Wywolanie FUNKCJI z przekazaniem ARGUMENTOW
+--- print(alkochol(2,22))   => Wywolanie FUNKCJI z przekazaniem ARGUMENTOW
+--- print(alkochol(1, 1))   => Wywolanie FUNKCJI z przekazaniem ARGUMENTOW
+----------------------------------------------------------
+""")
+def alkochol(wiek, kasa):
+     if (wiek >= 21) and (kasa >= 5):
+          return "Ok. Zapraszamy "
+     elif (wiek >= 21) and (kasa < 5):
+          return "SORRY. Najtanszy drink kosztuje 5zl"
+     elif (wiek < 21) and (kasa > 5):
+          return "Masz kase ale nie masz 21 lat :("
+     else:
+          return " F U C K WYPAD Z BARU."
+print(alkochol(22,22))
+print(alkochol(22,1))
+print(alkochol(2,22))
+print(alkochol(1, 1))
+print("\n")
+print("####### LISTS - LISTY  ############")
+
