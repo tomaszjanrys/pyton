@@ -1,5 +1,8 @@
 #!/bin/python3
 #Print string
+print("____________________________________________________________________________")
+print("                      P Y T H O N        L E V E L   0                      ")
+print("____________________________________________________________________________")
 print("String and thing");
 print('Hello world');
 print("""helo world 
@@ -192,4 +195,135 @@ print(alkochol(2,22))
 print(alkochol(1, 1))
 print("\n")
 print("####### LISTS - LISTY  ############")
+print("""-------------------------------------
+typ danych mozemy pobierac i modyfikowac
+-------------------------------------------
+movies = ["termnator", "Robocop", "spiderMan", "Titanc", "MR Robot"]
+---print(movies[0])     => wyswietla zawartosc pozycji 0
+---print(movies[2:])    => wyswietla przedzial  od pozycji 2 >
+---print(movies[:2])    => wyswietla przedzial  < 2 
+---print(movies[0:3])   => wyswietla przedzial <0, 3>
+---print(movies[-3])    => od 0 w lewo -3
+---print(movies[+3])    => od 0 w prawo +3
+---print(movies[-0:5])  =>
+---print(len(movies))   =>wyswietla ilosc elementow 
+""")
+movies = ["termnator", "Robocop", "spiderMan", "Titanc", "MR Robot"]
+print(movies[0])
+print(movies[2:])
+print(movies[:2])
+print(movies[0:3])
+print(movies[-3])
+print(movies[+3])
+print(movies[-0:5])
+print(len(movies))
+print("----------- A P P E N D ------------")
+print("""---------------------------------
+print(movies)  
+movies.append("XXX")   => dodaje element do listy 
+print(movies)
+------------------------------------------
+""")
+print(movies)
+movies.append("XXX")
+print(movies)
+print("----------- P O P  ------------")
+print("""---------------------------------
+print(movies)  
+movies.pop(2)   => usowa element z listy w nawiasie podajemy pozycje 
+print(movies)
+------------------------------------------
+""")
+print(movies)
+movies.pop(2)
+print(movies)
+print("\n")
+print("----------- Z I P ------------")
+print("""---------------------------------
+tabela = [1 ,2, 3]
+tabela2 = [4, 5, 6]
+zipper = zip(tabela, tabela2)  Z I P laczy ze soba listy 
+print(list(zipper))
+------------------------------------------
+""")
+tabela = [1 ,2, 3]
+tabela2 = [4, 5, 6]
+zipper = zip(tabela, tabela2)
+print(list(zipper))
+print("\n")
+print("""--------T U P L E S ---------------""")
+print("""---------------------------------
+typ danych ktore mozemy pobierac ale niemozemy modyfikowac !!!
 
+---------------------------------------
+grades = ("A", "B" , "C" , "D" , "F")
+print(grades[0:5])
+------------------------------------------
+""")
+grades = ("A", "B" , "C" , "D" , "F")
+print(grades[0:3])
+print("\n")
+print("################ L O O P I N G - Zapetlanie ############ ")
+print("""---------------F O R   I N ------------
+money = ["euro", "dolar", "zloty", "funt", "rubel"]
+for x in money:  x dowolny znak 
+     print(x)  => wylistuje wszystkie elemnty z zmienenj  money 
+------------------------
+""")
+
+money = ["euro", "dolar", "zloty", "funt", "rubel"]
+money1 = ["2", "3", "4", "5", "6"]
+zippper = zip(money, money1)
+for x in zippper:
+     print(x)
+print("---------- W H I L E ----------------")
+print("""
+-----------------------------------------
+i = 1             => 
+while i <10:    => petla z warunkiem wykonuje sie do momentu spelnienia warunku
+     print(i)     =>
+     i += 1       => zwieksza i o 1 
+a = 0             =>
+z = "10 razy "    =>
+while a <10:      =>
+     print(a,z)   => numerowanie , wyswietli 10 razy z mienna z
+     a = a + 1    => zwieksza o 1 zmienna a=0 o 1
+-----------------------------------------
+""")
+i = 1
+while i <10:
+     print(i)
+     i += 1 
+a = 0 
+z = "10 razy "
+while a <10:
+     print(a,z)
+     a = a + 1
+print("________________________________________________________________________")
+print("""-------------------------------------------------------------------
+--- zbior = []               => pusta tablica 
+--- suma = 10                => zmiena przechowuje sume dodawanych liczb
+--- x = 1                    => 
+--- while x < 12:            => petla z  warunkiem 
+---     suma = suma + 1      =>  operacje na zmienej 
+---      zbior.append(suma)  => dodaje do tablicy 
+---     print(x,suma)        =>  numerowanie, suma
+---     x = x + 1            => gdy osiagnie 11 petla sie zakonczy 
+--- print("Wynik :", suma)   => 
+--- print("Tblica :", list(zbior), "Ilosc elementow :",len(zbior))    
+-------------------------------------------------------------------------------------
+""")
+zbior = []
+suma = 10
+x = 1
+while x < 12:
+     suma = suma + 1
+     zbior.append(suma)
+     print(x,suma)
+     x = x + 1
+print("Wynik :", suma)
+print("Tblica :", list(zbior), "Ilosc elementow :",len(zbior))
+
+print("____________________________________________________________________________")
+print("                      g                                                   ")
+print("____________________________________________________________________________")
